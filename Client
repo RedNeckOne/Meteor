@@ -2,5 +2,3 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Meteor", "Synapse")
 local Client = Window:NewTab("Client")
 local FeaturesSection = Client:NewSection("Features")
-
--- Future features all go here like esp and walkspeed. use kavo ui
