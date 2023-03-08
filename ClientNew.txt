@@ -1,0 +1,90 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Meteor", "BloodTheme")
+local Client = Window:NewTab("Client")
+local FeaturesSection = Client:NewSection("Features")
+--WalkSpeed
+FeaturesSection:NewSlider("WalkSpeed", "Changes your Walking Speed, up to 50.", 50, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+--JumpPower
+FeaturesSection:NewSlider("JumpPower", "Changes your Jumping Power, up to 100.", 100, 50, function(j)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+end)
+--Extra-Sensory Perception
+Section:NewToggle("ESP", "Extra-Sensory Perception", function(state)
+    if state then    loadstring(game:HttpGet("https://raw.githubusercontent.com/RedNeckOne/Meteor/main/ESP", true))()
+    else
+        print("Toggle Off")
+    end
+end)
+--KillAura
+FeaturesSection:NewToggle("Killaura", "Automatically starts to attack your enemy within range.(Requires weapon to be held.)", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--SilentAim
+FeaturesSection:NewToggle("SilentAim", "Silently aims toward the closest player.(Throwable required", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--Run
+FeaturesSection:NewToggle("Run", "Automatically holds the Left-Shift key for you.", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--Velocity
+FeaturesSection:NewToggle("Velocity", "Reduces your knockback by 3/4 of normal knockback.", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--TriggerBot
+FeaturesSection:NewToggle("TriggerBot", "Bots the trigger function.", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--Range
+FeaturesSection:NewToggle("Range", "Allows you to gain extra hit range by 10 blocks.(Weapon needs to be held, not throwables.)", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--Float
+FeaturesSection:NewToggle("Float", "Float while being in air.", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--AutoBridge
+FeaturesSection:NewToggle("AutoBridge", "Automatically bridges for you.(Blocks need to be held.)", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+--VAPE V4
+FeaturesSection:NewButton("VAPE V4", "by 7GrandDadPGN", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+FeaturesSection:NewLabel("UI by xHeptc")
+FeaturesSection:NewLabel("Code by RedNeck1")
